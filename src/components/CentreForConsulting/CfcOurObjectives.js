@@ -12,15 +12,15 @@ const CfcOurObjectives = () => {
 
                             {/* Our Goals */}
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                
+
                                 {/* Image - comes first on mobile & tab */}
-                                <div className="flex flex-col gap-4 order-1 lg:order-2">
+                                <div className="flex flex-col justify-center items-center gap-4 order-1 lg:order-2">
                                     <Image
                                         src="/centre-for-consulting/cfc-objectives.webp"
                                         alt="Our Goals and Objectives"
                                         width={500}
                                         height={500}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain"
                                     />
                                 </div>
 
@@ -33,7 +33,7 @@ const CfcOurObjectives = () => {
                                         As a Centre of Excellence, ACC is committed to:
                                     </h5>
                                     <div>
-                                        <ul className="list-disc list-inside text-start monser-400 flex flex-col gap-4">
+                                        <ul className="list-disc list-inside text-start monser-400 text-lg lg:text-[20px] flex flex-col gap-4">
                                             <li className="flex items-start gap-3">
                                                 <span className="text-black">•</span>
                                                 Enhance the practical capabilities of AIMS students and faculty through hands-on learning and industry exposure

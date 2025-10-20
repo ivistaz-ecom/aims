@@ -17,7 +17,7 @@ const EceGoals = () => {
                                         Goals of AEEC
                                     </h3>
                                     <div>
-                                        <ul className='list-none text-start monser-400 flex flex-col gap-4'>
+                                        <ul className='list-none text-start monser-400 text-lg lg:text-[20px] flex flex-col gap-4'>
                                             <li className='flex items-start gap-3'>
                                                 <span className='text-black'>•</span>
                                                 <span>Build an Entrepreneurial Eco System at AIMS</span>
@@ -28,7 +28,7 @@ const EceGoals = () => {
                                             </li>
                                             <li className='flex items-start gap-3'>
                                                 <span className='text-black'>•</span>
-                                                <span>Disseminate knowledge on entrepreneurship and traching success story of entrepreneurs.</span>
+                                                <span>Disseminate knowledge on entrepreneurship and traching success story of entrepreneurs</span>
                                             </li>
                                             <li className='flex items-start gap-3'>
                                                 <span className='text-black'>•</span>

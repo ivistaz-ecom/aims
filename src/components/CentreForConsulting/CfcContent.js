@@ -14,7 +14,7 @@ const CfcContent = () => {
                             </h3>
                             <div className='lg:w-[75%] w-full '>
                                 <p className='text-start text-lg lg:text-[20px] monser-400'>
-                                    Established to bridge the gap between theory and practice, the AIMS Centre for Consulting (ACC) is designed to give students and faculty hands-on exposure to the world of industry-led problem-solving.
+                                    Established to bridge the gap between theory and practice, the AIMS Centre for Consulting (ACC) is designed to give students and faculty hands-on exposure to the world of industry-led <br className='md:hidden block' /> problem-solving.
                                 </p>
                                 <p className='text-start text-lg lg:text-[20px] monser-400'>
                                     The centre actively partners with corporates and NGOs to provide management consulting services in Bangalore colleges, allowing students and mentors alike to engage with real-world challenges and make tangible contributions.

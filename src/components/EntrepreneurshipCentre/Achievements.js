@@ -11,7 +11,7 @@ const Achievements = () => {
             title: 'Outstanding Women Entrepreneur Award',
             content:
                 [
-                    'AIMS family Congratulates Lakshmidevi B.V., cohort of Batch-3 of Goldman Sachs ISB AIMS 10 K Women Entrepreneurs Development Program, for winning the Priyadarshini Award. This award was given in the 12th global conference of women entrepreneurs organised by the Federation of Indian Women Entrepreneurs in association with the International Federation of Women Entrepreneurs at Hotel Ashok, New Delhi.',
+                    'AIMS family congratulates Lakshmidevi B.V., cohort of Batch-3 of Goldman Sachs ISB AIMS 10 K Women Entrepreneurs Development Program, for winning the Priyadarshini Award. This award was given in the 12th global conference of women entrepreneurs organised by the Federation of Indian Women Entrepreneurs in association with the International Federation of Women Entrepreneurs at Hotel Ashok, New Delhi.',
                     'The award was presented to 31 Indian women entrepreneurs and around 15 foreign women entrepreneurs, recognising them as outstanding women entrepreneurs. The award was presented by Union Minister (state) for women & child welfare, Smt Krishna Teertha, Mauritius Women & Child Welfare Minister Miss Martin, NSIC Chairman Kumar & FIWE President Smt Rajinee Agarwal on 5th September 2012.',
                     'The liberating Goa-based brand, Nirvana, is now online. Sneha Bhandare, Batch - 2 Cohort of GS ISB AIMS 10K Women entrepreneurs Development Program, is the co-owner of Nirvana Brand T-Shirts.'
                 ]
