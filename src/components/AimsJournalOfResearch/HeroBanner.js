@@ -30,6 +30,24 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
                   alt="Recruiters"
                   width={200}
                   height={200}
+                  className="hidden lg:block"
+                />
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div className="absolute lg:top-10 top-0 left-0 px-4 lg:px-0">
+         <div className="lg:px-8 px-4">
+         <div className="container mx-auto py-4">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                  className="lg:hidden"
                 />
               </div>
             </div>
