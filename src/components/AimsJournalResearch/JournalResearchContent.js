@@ -18,8 +18,7 @@ const RcContent = () => {
                 <div className='container mx-auto'>
                     <div className='flex flex-col gap-4'>
                         <h3 className='playfair-300 text-[#0C2165] leading-tight'>
-                            AIMS Internal Quality
-                            <br className='hidden md:block' />
+                            AIMS Internal Quality <br className='hidden md:block' />
                             Assurance Cell (AIQAC)
                         </h3>
                         <p className=''>
@@ -74,9 +73,11 @@ const RcContent = () => {
                                 Adopting innovative teaching
                             </li>
                             <li className='flex items-start gap-3'>
+                                <span className='text-black'>•</span>
                                 Providing international exposure
                             </li>
                             <li className='flex items-start gap-3'>
+                                <span className='text-black'>•</span>
                                 Encouraging continuous research and learning
                             </li>
                         </ul>
