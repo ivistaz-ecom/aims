@@ -17,7 +17,7 @@ const OurGoalsandObjectives = () => {
                     alt="Our Goals and Objectives"
                     width={500}
                     height={500}
-                    className='w-full h-full object-cover'
+                    className='w-full h-full object-contain'
                   />
                 </div>
                 <div className='flex flex-col justify-center'>
