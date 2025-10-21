@@ -38,17 +38,17 @@ const courses = [
     id: 2,
     title: "School of Finance and Commerce",
     programs: [
-      { name: "Ph.D in Commerce", link: "/phd-doctoral-programs" },
+      { name: "PhD in Commerce", link: "/phd-doctoral-programs" },
       {
-        name: "Master of Commerce MCOM",
+        name: "Master of Commerce M.COM",
         link: "/finance-commerce-school/master-of-commerce",
       },
       {
-        name: "Bachelor of Commerce BCOM",
+        name: "Bachelor of Commerce B.COM",
         link: "/finance-commerce-school/bachelor-of-commerce",
       },
       {
-        name: "CA/ACCA BCOM+",
+        name: "CA/ACCA B.COM+",
         link: "/finance-commerce-school/bachelor-of-commerce",
       },
     ],
