@@ -8,8 +8,13 @@ const nextConfig = {
                 port: '',
                 pathname: '/wp-content/uploads/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'docs.theaims.ac.in',
+                port: '',
+                pathname: '/wp-content/uploads/**',
+            },
         ],
-        domains: ["docs.theaims.ac.in"],
     },
 };
 
