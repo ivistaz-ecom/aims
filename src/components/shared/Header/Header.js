@@ -464,20 +464,18 @@ export default function Header() {
   return (
     <>
       <header
-        className={`z-50 bg-white backdrop-blur-md w-full ${
-          isSticky
-            ? "fixed top-0 left-0 right-0 md:shadow-none shadow-sm"
-            : "relative"
-        }`}
+        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky
+          ? "fixed top-0 left-0 right-0 md:shadow-none shadow-sm"
+          : "relative"
+          }`}
       >
         {/* HEADER CONTAINER */}
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
           <div className="px-4 lg:px-8">
             <div
-              className={`container mx-auto flex items-center justify-between py-3 w-full z-50 bg-white ${
-                isWindows ? "h-[12vh] md:h-[12vh]" : "h-[12vh] md:h-[10vh]"
-              }`}
+              className={`container mx-auto flex items-center justify-between py-3 w-full z-50 bg-white ${isWindows ? "h-[12vh] md:h-[12vh]" : "h-[12vh] md:h-[10vh]"
+                }`}
             >
               {/* Desktop Logo */}
               <div className="hidden lg:flex items-center">
@@ -489,9 +487,8 @@ export default function Header() {
                     height={120}
                     priority
                     quality={100}
-                    className={`h-10 w-auto lg:h-12 ${
-                      isWindows ? "xl:h-14" : "xl:h-18"
-                    } 2xl:h-16`}
+                    className={`h-10 w-auto lg:h-12 ${isWindows ? "xl:h-14" : "xl:h-18"
+                      } 2xl:h-16`}
                   />
                 </Link>
               </div>
@@ -540,11 +537,10 @@ export default function Header() {
 
               {/* Mobile Search Input - Smooth Transition */}
               <div
-                className={`md:hidden absolute inset-0 bg-white z-[9999] flex items-center px-4 transition-all duration-300 ease-in-out ${
-                  showMobileSearch
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-full pointer-events-none"
-                }`}
+                className={`md:hidden absolute inset-0 bg-white z-[9999] flex items-center px-4 transition-all duration-300 ease-in-out ${showMobileSearch
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-full pointer-events-none"
+                  }`}
               >
                 <div className="flex-1 relative">
                   <input
@@ -1063,9 +1059,8 @@ export default function Header() {
                         >
                           {menu.title}
                           <FiX
-                            className={`transform transition-all duration-300 ease-out ${
-                              mobileActive === menu.title ? "" : "rotate-45"
-                            }`}
+                            className={`transform transition-all duration-300 ease-out ${mobileActive === menu.title ? "" : "rotate-45"
+                              }`}
                           />
                         </button>
                         {mobileActive === menu.title && (
@@ -1125,13 +1120,12 @@ export default function Header() {
 
       {/* Content spacer that smoothly adjusts when header becomes sticky */}
       <div
-        className={`w-full ${
-          isSticky
-            ? isWindows
-              ? "h-[12vh] md:h-[12vh]"
-              : "h-[12vh] md:h-[10vh]"
-            : "h-0"
-        }`}
+        className={`w-full ${isSticky
+          ? isWindows
+            ? "h-[12vh] md:h-[12vh] lg:h-[19vh]"
+            : "h-[12vh] md:h-[10vh] lg:h-[17vh]"
+          : "h-0"
+          }`}
       />
     </>
   )
