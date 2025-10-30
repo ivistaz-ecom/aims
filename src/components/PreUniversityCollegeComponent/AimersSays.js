@@ -1,8 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
 import Image from "next/image";
 import { HiArrowSmallRight, HiArrowSmallLeft } from "react-icons/hi2";
 
@@ -31,6 +30,10 @@ const slides = [
 ];
 
 export default function AimersSays() {
+  useEffect(() => {
+    import("slick-carousel/slick/slick.css");
+    import("slick-carousel/slick/slick-theme.css");
+  }, []);
   let sliderRef = null;
 
   const settings = {

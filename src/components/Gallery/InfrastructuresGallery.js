@@ -3,11 +3,14 @@ import React, { useRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// CSS for slick will be loaded lazily inside the component
 
 // Generic Carousel Component
 const GalleryCarousel = ({ title, description, category }) => {
+    useEffect(() => {
+        import("slick-carousel/slick/slick.css");
+        import("slick-carousel/slick/slick-theme.css");
+    }, []);
     const sliderRef = useRef(null);
     const [slides, setSlides] = useState([]);
     const [slidesToShow, setSlidesToShow] = useState(4);

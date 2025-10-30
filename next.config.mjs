@@ -19,6 +19,40 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true, // ✅ Skip ESLint (no TypeScript needed)
     },
+    async headers() {
+        return [
+            // Cache all fonts under public/font/** for 1 year
+            {
+                source: '/font/:path*',
+                headers: [
+                    { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+                    { key: 'Access-Control-Allow-Origin', value: '*' },
+                ],
+            },
+            // Also cache font files anywhere in the app (defensive)
+            {
+                source: '/:path*.woff2',
+                headers: [
+                    { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+                    { key: 'Access-Control-Allow-Origin', value: '*' },
+                ],
+            },
+            {
+                source: '/:path*.woff',
+                headers: [
+                    { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+                    { key: 'Access-Control-Allow-Origin', value: '*' },
+                ],
+            },
+            {
+                source: '/:path*.ttf',
+                headers: [
+                    { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+                    { key: 'Access-Control-Allow-Origin', value: '*' },
+                ],
+            },
+        ];
+    },
     async redirects() {
         return [
             {

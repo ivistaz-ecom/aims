@@ -2,12 +2,7 @@
 @import "tw-animate-css";
 
 
-/* Add 3rd party styles here */
-@import "react-multi-carousel/lib/styles.css";
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-
-
+/* Third-party carousel styles are now loaded lazily in components to avoid render-blocking */
 
 @custom-variant dark (&:is(.dark *));
 

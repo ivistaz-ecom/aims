@@ -139,16 +139,6 @@ const RootLayout = ({ children }) => {
         </Script>
         {/* End Google Analytics */}
 
-        {/* ✅ Lazy-load non-critical carousel CSS */}
-        <Script id="lazy-carousel-css" strategy="lazyOnload">
-          {`
-            const link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = '/_next/static/css/slick-carousel.css';
-            document.head.appendChild(link);
-          `}
-        </Script>
-
         <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>

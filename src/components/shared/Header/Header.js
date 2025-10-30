@@ -919,7 +919,7 @@ export default function Header() {
 
           {/* BOTTOM NAV (Desktop) */}
           <div className="hidden lg:flex bg-[#0C2165] w-full h-[7vh] items-center justify-center z-50">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="container mx-auto px-4">
               <Menu setActive={setActive}>
                 {MenuItems.map((item, idx) => (
                   <MenuItem

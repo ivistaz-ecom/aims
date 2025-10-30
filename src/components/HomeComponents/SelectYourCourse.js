@@ -3,10 +3,14 @@ import React from 'react';
 import Image from 'next/image';
 import { FaChevronDown, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { useEffect } from 'react';
 
 const SelectYourCourse = () => {
+    useEffect(() => {
+        // Load slick carousel CSS after first paint to reduce render-blocking
+        import('slick-carousel/slick/slick.css');
+        import('slick-carousel/slick/slick-theme.css');
+    }, []);
     const [currentFirstSlide, setCurrentFirstSlide] = React.useState(0);
 
     const schools = [

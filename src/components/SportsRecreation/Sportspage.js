@@ -1,10 +1,14 @@
 "use client"
 import React from "react"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import { useEffect } from "react"
 
 const Sportspage = () => {
+  useEffect(() => {
+    // Load slick CSS lazily to avoid blocking initial render
+    import("slick-carousel/slick/slick.css")
+    import("slick-carousel/slick/slick-theme.css")
+  }, [])
   const clubs = [
     {
       text: "Builds discipline, confidence, and teamwork",
@@ -79,9 +83,8 @@ const Sportspage = () => {
             {clubs.map((club, index) => (
               <div
                 key={index}
-                className={`relative px-10 text-white text-sm sm:text-base font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[200px] overflow-hidden ${
-                  index !== 0 ? "-ml-9" : ""
-                }`}
+                className={`relative px-10 text-white text-sm sm:text-base font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[200px] overflow-hidden ${index !== 0 ? "-ml-9" : ""
+                  }`}
                 style={{
                   clipPath:
                     "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",

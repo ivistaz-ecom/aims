@@ -3,7 +3,7 @@ import React from "react";
 import ApplicationMarquee from "../../shared/ApplicationMarquee";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { useEffect } from "react";
 
 const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
   // You can add as many banner slides as you want here
@@ -27,6 +27,11 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
     tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
   };
+
+  useEffect(() => {
+    // Load react-multi-carousel CSS after initial render to avoid blocking
+    import("react-multi-carousel/lib/styles.css");
+  }, []);
 
   return (
     <>
