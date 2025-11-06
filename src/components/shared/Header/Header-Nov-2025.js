@@ -961,15 +961,20 @@ export default function Header() {
                                         item={item.title}
                                     >
                                         <div className="flex flex-col space-y-2">
-                                            {item.links.map((link, i) => (
-                                                <HoveredLink
-                                                    key={i}
-                                                    href={link.href || "#"}
-                                                    className="text-gray-700 hover:text-[#6E3299] hover"
-                                                >
-                                                    {link.name}
-                                                </HoveredLink>
-                                            ))}
+                                            {item.links.map((link, i) => {
+                                                const isPdf = link.href && link.href.toLowerCase().endsWith('.pdf');
+                                                return (
+                                                    <HoveredLink
+                                                        key={i}
+                                                        href={link.href || "#"}
+                                                        className="text-gray-700 hover:text-[#6E3299] hover"
+                                                        target={isPdf ? '_blank' : undefined}
+                                                        rel={isPdf ? 'noopener noreferrer' : undefined}
+                                                    >
+                                                        {link.name}
+                                                    </HoveredLink>
+                                                );
+                                            })}
                                         </div>
                                     </MenuItem>
                                 ))}
@@ -1089,18 +1094,23 @@ export default function Header() {
                                                 </button>
                                                 {mobileActive === menu.title && (
                                                     <ul className="bg-gray-50">
-                                                        {menu.links.map((link, i) => (
-                                                            <li key={i} className="px-6 py-2">
-                                                                <Link
-                                                                    href={link.href || "#"}
-                                                                    className="block text-gray-700 hover:text-[#6E3299] transition-all duration-200 ease-out text-[14px]"
-                                                                    style={{ fontSize: '14px' }}
-                                                                    onClick={handleLinkClick}
-                                                                >
-                                                                    {link.name}
-                                                                </Link>
-                                                            </li>
-                                                        ))}
+                                                        {menu.links.map((link, i) => {
+                                                            const isPdf = link.href && link.href.toLowerCase().endsWith('.pdf');
+                                                            return (
+                                                                <li key={i} className="px-6 py-2">
+                                                                    <Link
+                                                                        href={link.href || "#"}
+                                                                        className="block text-gray-700 hover:text-[#6E3299] transition-all duration-200 ease-out text-[14px]"
+                                                                        style={{ fontSize: '14px' }}
+                                                                        onClick={handleLinkClick}
+                                                                        target={isPdf ? '_blank' : undefined}
+                                                                        rel={isPdf ? 'noopener noreferrer' : undefined}
+                                                                    >
+                                                                        {link.name}
+                                                                    </Link>
+                                                                </li>
+                                                            );
+                                                        })}
                                                     </ul>
                                                 )}
                                             </li>

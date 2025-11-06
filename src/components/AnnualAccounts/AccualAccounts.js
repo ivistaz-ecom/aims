@@ -20,19 +20,19 @@ const AccualAccounts = () => {
                 <div className='container mx-auto flex flex-col py-10 space-y-4'>
                     <div>
                         <ul className='list-disc list-inside space-y-2'>
-                            <li className='text-[18px] text-[#A22877]   underline underline-offset-2'>
-                                <Link href="/annual-accounts/Annual Audit 2022-2023.pdf" target='_blank' noopener noreferrer>
-                                    Annual Audit 2022-2023
+                            <li className='text-[18px] text-[#A22877] underline underline-offset-2'>
+                                <Link href="/annual-accounts/Annual Audit 2024-25.pdf" target='_blank' noopener noreferrer>
+                                    Annual Audit 2024-2025
                                 </Link>
                             </li>
                             <li className='text-[18px] text-[#A22877] underline underline-offset-2'>
-                                <Link href="/annual-reports/Annual Audit 2023-2024.pdf" target='_blank' noopener noreferrer>
+                                <Link href="/annual-accounts/Annual Audit 2023-2024.pdf" target='_blank' noopener noreferrer>
                                     Annual Audit 2023-2024
                                 </Link>
                             </li>
-                            <li className='text-[18px] text-[#A22877] underline underline-offset-2'>
-                                <Link href="/annual-reports/Annual Audit 2024-25.pdf" target='_blank' noopener noreferrer>
-                                    Annual Audit 2024-2025
+                            <li className='text-[18px] text-[#A22877]   underline underline-offset-2'>
+                                <Link href="/annual-accounts/Annual Audit 2022-2023.pdf" target='_blank' noopener noreferrer>
+                                    Annual Audit 2022-2023
                                 </Link>
                             </li>
                         </ul>
