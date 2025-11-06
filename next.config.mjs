@@ -55,6 +55,78 @@ const nextConfig = {
     },
     async redirects() {
         return [
+            // Specific redirects - must come before catch-all
+            {
+                source: '/aims-institutes',
+                destination: '/aims-overview',
+                permanent: true,
+            },
+            {
+                source: '/phd',
+                destination: '/phd-doctoral-programs',
+                permanent: true,
+            },
+            {
+                source: '/bba',
+                destination: '/business-school/bachelor-business-administration',
+                permanent: true,
+            },
+            {
+                source: '/bba-aviation-management',
+                destination: '/business-school/bachelor-business-administration-aviation-management',
+                permanent: true,
+            },
+            {
+                source: '/mcom',
+                destination: '/finance-commerce-school/master-of-commerce',
+                permanent: true,
+            },
+            {
+                source: '/bcom',
+                destination: '/finance-commerce-school/bachelor-of-commerce',
+                permanent: true,
+            },
+            {
+                source: '/bhm',
+                destination: '/hospitality-tourism-school/bachelor-hotel-management',
+                permanent: true,
+            },
+            {
+                source: '/mca',
+                destination: '/information-technology-school/master-computer-applications',
+                permanent: true,
+            },
+            {
+                source: '/bca',
+                destination: '/information-technology-school/bachelor-computer-applications',
+                permanent: true,
+            },
+            {
+                source: '/integrated-pcmb/pcmc',
+                destination: '/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee',
+                permanent: true,
+            },
+            {
+                source: '/science-pcmb/pcmc',
+                destination: '/pre-university-college/science-pcmb-pcmc',
+                permanent: true,
+            },
+            {
+                source: '/commerce-ceba',
+                destination: '/pre-university-college/commerce-ceba',
+                permanent: true,
+            },
+            {
+                source: '/puc',
+                destination: '/pre-university-college',
+                permanent: true,
+            },
+            {
+                source: '/bangalore-university-previous-question-papers',
+                destination: '/library-and-information-centre',
+                permanent: true,
+            },
+            // Catch-all redirect for www subdomain
             {
                 source: '/:path*',
                 has: [
