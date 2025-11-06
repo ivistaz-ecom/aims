@@ -897,7 +897,7 @@ export default function Header() {
                                     showReadMore={false}
                                     variant="placement"
                                     href="/contact-us"
-                                    className="text-sm px-4 py-2"
+                                    className="text-sm px-4 py-0"
                                 >
                                     Contact Us
                                 </Button>

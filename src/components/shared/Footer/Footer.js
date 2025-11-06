@@ -164,7 +164,7 @@ export default function Footer() {
         { href: '/student-information-zone', text: 'Student Handbook' },
         { href: '/student-information-zone', text: 'Student Exit Formalities' },
         { href: '/student-information-zone', text: 'Examinations' },
-        { href: '/student-information-zone', text: 'Academic Calendar' },
+        { href: '/aims-academic-calendar', text: 'Academic Calendar' },
         { href: '/pdf/footer-pdf/Program_and_Course_Outcomes.pdf', target: '_blank', text: 'Program and Course Outcome' },
         { href: '/student-information-zone', text: 'Code of Conduct (Students)' }
       ]
@@ -243,7 +243,7 @@ export default function Footer() {
         </div>
 
         {/* Mobile Collapsible Sections */}
-        <div className="lg:hidden space-y-0 px-4 lg:px-8">
+        <div className="lg:hidden space-y-0">
           {footerSections.map((section) => (
             <div key={section.id} className="border-b border-gray-600">
               <button

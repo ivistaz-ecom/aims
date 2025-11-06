@@ -2,16 +2,16 @@ export const MenuItems = [
     {
         title: "About AIMS",
         links: [
-            { name: "Overview", href: "/upcoming-page" },
-            { name: "Act and Statutes or MoA", href: "/upcoming-page" },
+            { name: "Overview", href: "/aims-overview" },
+            { name: "Act and Statutes or MoA", href: "/acts-and-statutes-moa" },
             { name: "Institutional Development Plan", href: "/upcoming-page" },
             { name: "Constituent Units/Affiliating University", href: "/upcoming-page" },
             { name: "Accreditation and Rankings", href: "/accreditations-rankings" },
-            // { name: "NAAC Accreditation", href: "/naac-accreditation" },
-            // { name: "NIRF", href: "/nirf-ranking" },
+            { name: "NAAC Accreditation", href: "/naac-accreditation" },
+            { name: "NIRF", href: "/nirf-ranking" },
             { name: "UGC 2 (f) & 12B", href: "/upcoming-page" },
-            { name: "Annual Reports", href: "/upcoming-page" },
-            { name: "Annual Accounts", href: "/upcoming-page" },
+            { name: "Annual Reports", href: "/annual-reports" },
+            { name: "Annual Accounts", href: "/annual-accounts" },
         ],
     },
     {

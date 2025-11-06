@@ -4,7 +4,7 @@ import Image from "next/image"
 const Aiming = () => {
   return (
     <>
-      <div className="justify-center items-center flex flex-col  px-4  relative ">
+      <div className="justify-center items-center flex flex-col px-4 relative">
         <div className="absolute md:-top-100 mt-[40%] right-0 md:block hidden">
           <Image
             src="/school-circle.svg"
@@ -17,7 +17,7 @@ const Aiming = () => {
       <div className="px-4 lg:px-8">
         <div className="container mx-auto">
           {/* Row 2: Left Image, Right Content */}
-          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 sm:py-8 md:py-10 lg:py-10 mt-5">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 md:pb-10 lg:pb-10 mt-5">
             {/* Left Side - Image */}
             <div className="w-full lg:w-1/2  flex justify-center lg:justify-start ">
               <Image
@@ -44,7 +44,7 @@ const Aiming = () => {
             </div>
           </div>
 
-        
+
           {/* Row 3: Left Content, Right Image */}
           <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 mb-10">
             {/* Left Side - Content */}
