@@ -6,8 +6,8 @@ const page = () => {
     return (
         <>
             <SeoMetadata
-                title="Annual Reports | AIMS Institutes"
-                description="View the latest annual reports from AIMS Institutes. Get insights into our academic performance, governance, student activities, and institutional development."
+                title="AIMS Institutes | Annual Academic Reports"
+                description="View AIMS Institutes’ annual academic and governance reports detailing institutional progress, performance, and key initiatives across each academic year."
                 path="/annual-reports"
                 metaImage="/images/aims-logo.png"
             />

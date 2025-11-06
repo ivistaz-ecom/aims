@@ -5,7 +5,7 @@ export const MenuItems = [
             { name: "Overview", href: "/aims-overview" },
             { name: "Act and Statutes or MoA", href: "/acts-and-statutes-moa" },
             { name: "Institutional Development Plan", href: "/upcoming-page" },
-            { name: "Constituent Units/Affiliating University", href: "/upcoming-page" },
+            { name: "Swayam-NPTEL", href: "/upcoming-page" },
             { name: "Accreditation and Rankings", href: "/accreditations-rankings" },
             { name: "NAAC Accreditation", href: "/naac-accreditation" },
             { name: "NIRF", href: "/nirf-ranking" },
@@ -31,7 +31,7 @@ export const MenuItems = [
         title: "Academics",
         links: [
             { name: "Program details", href: "/upcoming-page" },
-            { name: "Academic Calendar", href: "/upcoming-page" },
+            { name: "Academic Calendar", href: "/aims-academic-calendar" },
             { name: "Examinations", href: "/upcoming-page" },
             { name: "Schools & Departments", href: "/upcoming-page" },
             { name: "Faculty Details", href: "/upcoming-page" },

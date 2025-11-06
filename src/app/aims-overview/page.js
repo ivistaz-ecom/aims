@@ -6,11 +6,11 @@ const page = () => {
   return (
     <>
       <SeoMetadata
-        title="Best Business School in India | AIMS Bangalore"
-        description="Discover AIMS, the Best business school in Bangalore and among the top business schools in India for postgraduate studies. Shape your career with us."
-        path="/about-aims"
+        title="AIMS Institutes | Top Business School in Bangalore"
+        description="AIMS Institutes is among the best business schools in India and a top MBA college in Bangalore, known for academic excellence, innovation, and industry-ready programs."
+        path="/aims-overview"
         metaImage="/about-aims/About-banner.webp"
-        // schemaType="EducationalOrganization"
+      // schemaType="EducationalOrganization"
       />
       <AboutAims />
     </>

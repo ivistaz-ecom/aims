@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 const PatentsTimeline = () => {
   const [selectedYear, setSelectedYear] = useState(2025)
@@ -1521,33 +1522,96 @@ const PatentsTimeline = () => {
 
   return (
     <div className="relative overflow-hidden">
+      <style>{`
+        ul.list-disc li::marker {
+          color: #A22877;
+        }
+        ul.list-disc li {
+          font-size: 18px;
+        }
+      `}</style>
       {/* Light Green Header Strip */}
       <div className="bg-[#E1F9F4] py-10 px-4 lg:px-8">
-        <div className="container mx-auto  ">
-          <div className="bg-[#e6f9f3] text-center">
-            <p className="text-sm md:text-base  max-w-4xl mx-auto">
-              At AIMS Institutes, rankings aren&#39;t the destination,
-              they&#39;re the result of staying focused on our target to deliver
-              education that transforms potential into performance.
-            </p>
-            <p className="mt-4 text-sm md:text-base  max-w-4xl mx-auto">
-              As a&nbsp;
-              <span className=" font-bold  monser-500 ">
-                NAAC A Grade College
-              </span>
-              , we are recognised for academic rigour, industry relevance, and
-              our ability to prepare students for the long haul. With over 30
-              years of expertise, our journey is one of discipline, direction,
-              and measurable outcomes.
-            </p>
+        <div className="container mx-auto">
+          <h3 className="text-2xl md:text-4xl font-bold text-[#0C2165] playfair-300">
+            Accreditations
+          </h3>
+          <div className="space-y-4">
+            <div className="flex flex-col gap-4">
+              <h6 className="text-black text-bold text-2xl">
+                NAAC
+              </h6>
+              <div className="pl-4">
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>
+                    <Link href="/accreditations/NAAC.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      Cycle
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/accreditations/NAAC (1).pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      Cycle 1
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-black text-bold text-2xl">
+                NIRF
+              </h6>
+              <div className="pl-4">
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>
+                    <Link href="/accreditations/NIRF_AIMS_2024.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      NIRF 2024
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/accreditations/NIRF_AIMS_2023.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      NIRF 2023
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/accreditations/NIRF_AIMS_2022.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      NIRF 2022
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/accreditations/NIRF-2021.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      NIRF 2021
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h6 className="text-black text-bold text-2xl">
+                IACBE
+              </h6>
+              <div className="pl-4">
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>
+                    <Link href="/accreditations/IACBE Accreditation Certificate 2020 AIMS School of Business.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      Certificate
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/accreditations/5 IACBE Acreditation (international) Certificate.pdf" target='_blank' className="underline underline-offset-2 text-[#A22877]" noopener noreferrer>
+                      AIMS School of Business - IACBE Accreditation
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="bg-white mt-10 px-4 ">
         <h3 className="text-2xl md:text-4xl font-bold text-center text-[#0C2165] playfair-300">
-          Here&apos;s a look at how our efforts have <br />
-          hit the mark over the years.
+          Rankings
         </h3>
       </div>
 
@@ -1576,19 +1640,17 @@ const PatentsTimeline = () => {
                   <div>
                     <button
                       onClick={() => setSelectedYear(year)}
-                      className={`md:ml-15 ml-10  px-6 py-1 rounded-full transition-all duration-300 border-1 flex items-center justify-between ${
-                        selectedYear === year
-                          ? "bg-[#A22877] text-white border-[#A22877]"
-                          : "bg-white text-[#A22877] border-[#A22877]"
-                      }`}
+                      className={`md:ml-15 ml-10  px-6 py-1 rounded-full transition-all duration-300 border-1 flex items-center justify-between ${selectedYear === year
+                        ? "bg-[#A22877] text-white border-[#A22877]"
+                        : "bg-white text-[#A22877] border-[#A22877]"
+                        }`}
                     >
                       <span className="font-semibold monser-600 pr-2 text-[20px]">
                         Year {year}
                       </span>
                       <svg
-                        className={`w-5 h-5 transition-transform duration-300 ${
-                          selectedYear === year ? "rotate-180" : ""
-                        }`}
+                        className={`w-5 h-5 transition-transform duration-300 ${selectedYear === year ? "rotate-180" : ""
+                          }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
