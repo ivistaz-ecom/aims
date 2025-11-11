@@ -378,9 +378,9 @@ export default function Footer() {
                   <button
                     type="submit"
                     disabled={isLoading}
-                    className="bg-[#9c2474] border-6 border-[#D8BFD8] text-white font-semibold text-lg px-3 md:px-4 rounded-[25px] py-1 shadow-lg transform origin-right hover:bg-[#FF7F02] transition-all duration-300 group flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed w-full"
+                    className="bg-[#9c2474] border-6 border-[#D8BFD8] text-white font-semibold text-lg px-3 md:px-4 rounded-[25px] py-1 shadow-lg transform origin-right hover:bg-[#FF7F02] transition-all duration-300 group flex items-center justify-center disabled:opacity-50 w-full cursor-pointer"
                   >
-                    <span className="flex items-center justify-center gap-1 md:gap-2">
+                    <span className="flex items-center justify-center gap-1 md:gap-2 cursor-pointer">
                       {isLoading ? "Subscribing..." : "Sign Up"}
                       {!isLoading && <GoArrowDownRight className="w-3 h-3 md:w-5 md:h-5 transition-all duration-300 ease-in-out group-hover:-rotate-90" />}
                     </span>
