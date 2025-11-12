@@ -14,7 +14,7 @@ const StructuredSupport = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-t from-[#F1DEFC] to-[#FFE0F4] px-4">
+        <div className="bg-gradient-to-t from-[#F1DEFC] to-[#FFE0F4] px-4 lg:px-8">
             <div className='container mx-auto py-10'>
                 <h3 className='text-center text-[#0C2165] font-semibold'>Structured Support to Help You AIM Right</h3>
                 <h6 className='text-center'>ACR is actively involved in various research projects with the industry and government bodies that provide a great platform for students and faculty to nurture their research skills, abilities, and knowledge. </h6>

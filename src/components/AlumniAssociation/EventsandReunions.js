@@ -5,7 +5,7 @@ import React from "react"
 const EventsandReunions = () => {
   return (
     <>
-      <div className="w-full bg-white py-10 lg:px-0 px-4">
+      <div className="w-full bg-white py-10 lg:px-8 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left Column - Content */}

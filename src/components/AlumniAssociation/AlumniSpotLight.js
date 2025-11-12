@@ -4,7 +4,7 @@ import Button from "@/shared/Button"
 
 const AlumniSpotLight = () => {
   return (
-    <div className="w-full bg-[#531675] py-10">
+    <div className="w-full bg-[#531675] py-10 lg:px-8 px-4">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
           {/* Main Title */}
@@ -46,7 +46,7 @@ const AlumniSpotLight = () => {
             <p className="text-lg text-white">Want to be featured?</p>
             <Button
               variant="placement"
-              onClick={() => {}}
+              onClick={() => { }}
               className="flex items-center gap-2 hover:bg-[#531675]/80"
             >
               Share Your Story

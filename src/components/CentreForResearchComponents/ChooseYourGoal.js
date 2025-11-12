@@ -3,7 +3,7 @@ import React from 'react'
 const ChooseYourGoal = () => {
     return (
         <>
-            <div className='px-4 lg:px-8'>
+            <div className='lg:px-8 px-4'>
                 <div className='container mx-auto py-10'>
                     <h3 className='text-center text-[#0C2165] font-semibold'>Choose Your Goal. AIM for the Future.</h3>
                     <h6 className='text-center'>At AIMS, we believe research is more than exploration; it&apos;s a way to focus your academic potential and move purposefully towards your professional and social impact goals. Established in 2005, the AIMS Centre for Research (ACR) was founded to nurture a structured, goal-oriented research culture across the institution.</h6>
