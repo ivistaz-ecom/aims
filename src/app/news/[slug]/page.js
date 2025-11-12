@@ -56,30 +56,22 @@ const NewsDetail = () => {
 
   if (!newsData) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <div className="max-w-xl text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">
             News Not Found
           </h1>
           <p className="text-gray-600">
-            The news article you&apos;re looking for doesn&apos;t exist.
+            The news article you&apos;re looking for may have been removed or
+            is temporarily unavailable.
           </p>
-          <div className="mt-4 text-sm text-gray-500">
-            <p>Slug: {params.slug}</p>
-            <p>API Endpoint: {API_CONFIG.SERVER_URL}news</p>
-            <p>
-              Categories: 7,8,9,10 (Student Achievements, Events, Placements,
-              Campus Updates)
-            </p>
-            <p>Environment: {API_CONFIG.currentEnvironment}</p>
-            <p>Server ID: {API_CONFIG.PRODUCTION_SERVER_ID}</p>
-          </div>
-          <div className="mt-4">
+          <div className="mt-6">
             <Link
               href="/news"
-              className="text-[#A22877] hover:text-[#6E3299] transition-colors duration-300"
+              className="inline-flex items-center gap-2 text-[#A22877] hover:text-[#6E3299] transition-colors duration-300"
             >
-              ← Back to News
+              <span>←</span>
+              <span>Back to all news</span>
             </Link>
           </div>
         </div>
