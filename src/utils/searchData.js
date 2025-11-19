@@ -1571,6 +1571,29 @@ export const searchResults = [
       "aims recruitment portal",
     ],
   },
+
+  // Right To Information Page
+  {
+    id: 74,
+    title: "Right to Information (RTI)",
+    url: "/right-to-information",
+    type: "Page",
+    keywords: [
+      "right to information",
+      "aims rti",
+      "rti",
+      "rti disclosure aims",
+      "statutory information aims",
+      "rti manual aims",
+      "rti compliance aims",
+      "public information officer aims",
+      "rti application process aims",
+      "mandatory disclosures aims",
+      "transparency and governance aims",
+      "rti documents aims",
+      "higher education rti compliance",
+    ],
+  },
 ]
 
 // Initialize MiniSearch instance
